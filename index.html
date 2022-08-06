@@ -3,16 +3,24 @@
   <head>
     <meta charset="UTF-8"/>
     <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <title>About Me & Contact</title>
   </head>
+    <div>
+      <img id="logo" src="/About Me Logo/Matt Marion Headshot (1).jpg" alt="profile picture" />
+    </div>
     <nav id="nav-bar">
         <header id="header">
-            <p class="text-header matt-marion">Matt Marion</p>
-            <p class="text-header">Technical Writing Portfolio </p>
-        </header>
-        <!-- add an image as your logo-->
-        <a class="nav-link" href="#"></a>
-        <a class="nav-link" href="#"></a>
+            <p class="text-header"><span class="matt-marion">Matt Marion</span>
+              <br>
+            <span class="second-level"><span class="technical-writer">Technical Writer</span>
+              <a class="nav-link social-icons" href="https://www.linkedin.com/in/matt-marion-43a56363/" target="_blank">
+                <i class="fab fa-linkedin-in"></i></a>
+              <a class="nav-link social-icons" href="https://github.com/matt-marion" target="_blank">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </span></p>
+            </header>
     </nav>
   <main id="main-container">
     <div class="div-container">
@@ -36,14 +44,14 @@
         <p>
           Feel free to send me an email
         </p>
-        <form id="form" class="main-section">
-          <ul>
-          <li>First Name: <input type="text" /></li> 
-          <li>Last Name: <input type="text"/></li>
-          <li>Email: <input type="email" id="email" placeholder="email address" required/></li>
-          <li>Message: <input type="textarea"/></li>
-        </ul>
-        <input type="submit" id="submit" target=""/>
+        <form method="post" id="form" class="main-section">
+          <fieldset>
+          <p class="contact-form">First Name: <input type="text" /></p>
+          <p class="contact-form">Last Name: <input type="text"/></p>
+          <p class="contact-form">Email: <input type="email" id="email" placeholder="email address" required/></p>
+          <p class="contact-form">Message: <input type="textarea" /></p>
+        <p class="contact-form"><input type="submit" id="submit" target=""/></p>
+        </fieldset>
         </form>
       </section>
     </div>
